@@ -15,8 +15,6 @@ module OmniAuth
         :access_token_url => "#{CUSTOM_PROVIDER_URL}/auth/josh_id/access_token"
       }
       
-      option :provider_ignores_state, true
-
       uid { raw_info['id'] }
 
       info do
